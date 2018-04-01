@@ -109,7 +109,7 @@ int count_living_neighbours( int grid[][GRID_SIZE], int size, int x, int y ) {
 
     /* our loop counts the cell at the center of the */
     /* neighbourhood. Remove that from the count     */
-    if( grid[y][x] == DEAD_CELL ) {
+    if( grid[y][x] != DEAD_CELL ) {
         count--;
     }
     
